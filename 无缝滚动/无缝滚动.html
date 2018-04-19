@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        nav {
+            width: 882px;
+            height:86px;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+        nav li {
+            height:100%;
+            flex: 1;
+        }
+        nav li img {
+            height: 100%;
+            width: 100%;
+        }
+        nav ul {
+            display: flex;
+            width: 200%;
+            animation: moveing 5s linear infinite; /*引用动画*/
+            /*linear匀速运动*/
+        }
+        /*定义动画*/
+        @keyframes moveing {
+            from{
+                transform:translateX(0);
+            }
+            to {
+                transform:translateX(-882px);
+            }
+        }
+        nav:hover ul {
+            animation-play-state:paused;
+        }
+
+    </style>
+</head>
+<body>
+ <nav>
+     <ul>
+         <li><a href="#"><img src="images/nav1.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav2.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav3.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav4.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav5.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav6.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav7.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav1.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav2.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav3.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav4.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav5.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav6.jpg" alt=""></a></li>
+         <li><a href="#"><img src="images/nav7.jpg" alt=""></a></li>
+     </ul>
+ </nav>
+</body>
+</html>
